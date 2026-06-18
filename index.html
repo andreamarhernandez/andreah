@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Andrea Hernandez – Portafolio</title>
+  <meta name="description" content="Portafolio profesional de Andrea Margarita Hernández Arévalo – Desarrollo Web y Gestión de Proyectos Tecnológicos."/>
+  <meta name="keywords" content="Andrea Hernandez, portafolio, desarrollo web, frontend, HTML, CSS, JavaScript, El Salvador"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+ 
+<!-- NAVBAR -->
+<nav>
+  <div class="nav-logo">A</div>
+  <ul class="nav-links">
+    <li><a href="#Inicio">Inicio</a></li>
+    <li><a href="#about">Acerca de mí</a></li>
+    <li><a href="#certificados">Certificados</a></li>
+    <li><a href="#portfolio">Portafolio</a></li>
+    <li><a href="#contact" class="btn-contact">Contáctame</a></li>
+  </ul>
+</nav>
+ 
+<!-- TOGGLE IDIOMA -->
+<div class="lang-toggle">
+  <button class="lang-btn active" id="btn-es" onclick="setLang('es')">ES</button>
+  <span class="lang-divider">|</span>
+  <button class="lang-btn" id="btn-en" onclick="setLang('en')">EN</button>
+</div>
+ 
+<!-- HERO -->
+<div class="hero" id="Inicio">
+  <div class="hero-text">
+    <p class="hero-greeting">Hola, Mi nombre es</p>
+    <h1 class="hero-name">Andrea Margarita Hernandez Arevalo</h1>
+    <p class="hero-role">Desarrollo Web y Gestión de Proyectos Tecnológicos</p>
+    <p class="hero-desc">
+      Soy estudiante de Ingeniería de Sistemas y Redes interesado en el desarrollo web
+      y en proyectos tecnológicos. Disfruto aprender cómo se construyen las aplicaciones web,
+      desde las interfaces de usuario hasta las bases de datos, y actualmente estoy desarrollando
+      mis habilidades en tecnologías web modernas.
+    </p>
+    <div class="hero-location">
+      <i class="fas fa-map-marker-alt"></i>
+      <span>Usulután, El Salvador</span>
+    </div>
+    <a href="AndreaHernandez_CV_ES.pdf" download="AndreaHernandez_CV_ES.pdf" id="btn-cv-link" class="btn-cv">
+      <i class="fas fa-download"></i> <span class="cv-text">Descargar CV</span>
+    </a>
+  </div>
+  <div class="hero-img-placeholder">
+    <img src="_LUI0445-6.jpg.jpeg" alt="Andrea Hernandez"/>
+  </div>
+</div>
+ 
+<hr class="section-divider"/>
+ 
+<!-- ABOUT ME -->
+<section id="about">
+  <h2 class="section-title about-title">Acerca de mí</h2>
+  <div class="about-grid">
+    <div class="about-left">
+      <p class="about-label about-label-who">¿Quién soy?</p>
+      <h3 class="about-heading">Estudiante de Ingeniería de<br/>Sistemas y Redes</h3>
+      <p class="about-text">Me apasiona construir interfaces limpias y funcionales. Tengo experiencia liderando equipos como Scrum Master y PMO, y disfruto explorar cada capa del desarrollo web — desde el diseño hasta la base de datos.</p>
+      <div class="about-stats">
+        <div class="stat-item"><span class="stat-num">3+</span><span class="stat-label">Proyectos</span></div>
+        <div class="stat-item"><span class="stat-num">2</span><span class="stat-label">Años estudiando</span></div>
+        <div class="stat-item"><span class="stat-num">2</span><span class="stat-label">Roles de liderazgo</span></div>
+      </div>
+    </div>
+    <div class="about-right">
+      <p class="about-label about-label-skills">Habilidades técnicas</p>
+      <div class="skills-grid">
+        <div class="skill-card"><i class="fas fa-code"></i><div><div class="skill-label">Desarrollo Web</div><div class="skill-sub">HTML, CSS, JavaScript</div></div></div>
+        <div class="skill-card"><i class="fas fa-paint-brush"></i><div><div class="skill-label">Frontend</div><div class="skill-sub">Responsive Design, UI Basics</div></div></div>
+        <div class="skill-card"><i class="fas fa-mobile-alt"></i><div><div class="skill-label">Programación</div><div class="skill-sub">Python, JavaScript</div></div></div>
+        <div class="skill-card"><i class="fas fa-database"></i><div><div class="skill-label">Bases de Datos</div><div class="skill-sub">SQL, CouchDB</div></div></div>
+        <div class="skill-card"><i class="fab fa-git-alt"></i><div><div class="skill-label">Control de Versiones</div><div class="skill-sub">Git, GitHub</div></div></div>
+        <div class="skill-card"><i class="fas fa-tasks"></i><div><div class="skill-label">Gestión de Proyectos</div><div class="skill-sub">PMO, Scrum</div></div></div>
+        <div class="skill-card"><i class="fas fa-network-wired"></i><div><div class="skill-label">Redes</div><div class="skill-sub">Computer Networks</div></div></div>
+        <div class="skill-card learning"><i class="fas fa-brain"></i><div><div class="skill-label">Backend</div><div class="skill-sub">Aprendiendo...</div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<hr class="section-divider"/>
+ 
+<!-- CERTIFICADOS -->
+<section id="certificados">
+  <h2 class="section-title cert-title">Certificados</h2>
+  <div class="cert-grid">
+    <div class="cert-card">
+      <div class="cert-img-wrap">
+        <img src="flisol.png" alt="FLISOL" onerror="this.parentElement.classList.add('no-img')"/>
+        <div class="cert-img-fallback"><i class="fas fa-certificate"></i></div>
+      </div>
+      <div class="cert-footer"><p class="cert-name">FLISOL 2026</p></div>
+    </div>
+    <div class="cert-card">
+      <div class="cert-img-wrap">
+        <img src="certificadoderedes.png" alt="Introduccion a las redes" onerror="this.parentElement.classList.add('no-img')"/>
+        <div class="cert-img-fallback"><i class="fas fa-certificate"></i></div>
+      </div>
+      <div class="cert-footer"><p class="cert-name">CCNA: Introducción a las redes</p></div>
+    </div>
+  </div>
+</section>
+ 
+<hr class="section-divider"/>
+ 
+<!-- PORTFOLIO -->
+<div class="portfolio-section" id="portfolio">
+  <h2 class="section-title portfolio-title">Portafolio</h2>
+  <div class="portfolio-grid">
+    <div class="project-card">
+      <div class="project-preview">
+        <img src="lectuosito.png" alt="Lectuosito preview" onerror="this.parentElement.innerHTML='<div class=preview-placeholder><i class=\'fas fa-book\'></i></div>'"/>
+      </div>
+      <div class="project-body">
+        <span class="project-category">FRONTEND</span>
+        <h3 class="project-name">Lectuosito</h3>
+        <p class="project-role-text">Rol: <span>Diseñadora UI/UX</span></p>
+        <p class="project-desc">Biblioteca digital para gestión y lectura de libros en línea. Me encargué del diseño completo de la interfaz.</p>
+        <div class="project-tech"><span class="tech-tag">HTML</span><span class="tech-tag">CSS</span><span class="tech-tag">JavaScript</span></div>
+        <a href="https://github.com/GlaMayBarPin/prograIV-semi-2025" target="_blank" class="project-link"><i class="fab fa-github"></i> Ver proyecto</a>
+      </div>
+    </div>
+    <div class="project-card">
+      <div class="project-preview">
+        <img src="jardines.png" alt="Jardines preview" onerror="this.parentElement.innerHTML='<div class=preview-placeholder><i class=\'fas fa-leaf\'></i></div>'"/>
+      </div>
+      <div class="project-body">
+        <span class="project-category">FRONTEND · COLABORATIVO</span>
+        <h3 class="project-name">Jardines Personalizados</h3>
+        <p class="project-role-text">Rol: <span>Frontend Developer &amp; Scrum Master</span></p>
+        <p class="project-desc">Sistema web para diseñar y gestionar jardines a medida. Lideré el equipo como Scrum Master y participé en el desarrollo frontend.</p>
+        <div class="project-tech"><span class="tech-tag">HTML</span><span class="tech-tag">CSS</span><span class="tech-tag">JavaScript</span></div>
+        <a href="https://github.com/josejimenez20/Jardines_Personalizados" target="_blank" class="project-link"><i class="fab fa-github"></i> Ver proyecto</a>
+      </div>
+    </div>
+    <div class="project-card">
+      <div class="project-preview no-preview">
+        <div class="preview-placeholder"><i class="fas fa-drafting-compass"></i><span>En desarrollo</span></div>
+      </div>
+      <div class="project-body">
+        <span class="project-category">PMO · SCRUM</span>
+        <h3 class="project-name">Sistema de Gestión de Pasantías</h3>
+        <p class="project-role-text">Rol: <span>Scrum Master &amp; PMO</span></p>
+        <p class="project-desc">Plataforma para administrar procesos de pasantías institucionales. Actualmente en fase de planeación.</p>
+        <div class="project-tech"><span class="tech-tag">Por definir</span></div>
+        <span class="project-link-disabled"><i class="fab fa-github"></i> Repositorio próximamente</span>
+      </div>
+    </div>
+  </div>
+</div>
+ 
+<hr class="section-divider"/>
+ 
+<!-- CONTACT ME -->
+<div class="contact-section" id="contact">
+  <h2 class="section-title contact-title">Contáctame</h2>
+  <div class="contact-inner">
+    <div class="contact-left">
+      <h4 class="contact-info-h4">Info de contacto</h4>
+      <div class="contact-info-item"><i class="fas fa-envelope"></i><span>andreamhrdez@gmail.com</span></div>
+      <div class="contact-info-item"><i class="fas fa-phone"></i><span>7658-2768</span></div>
+      <div class="contact-info-item"><i class="fas fa-map-marker-alt"></i><span>Usulután, El Salvador</span></div>
+      <p class="social-title social-h4">Redes profesionales</p>
+      <a href="https://github.com/andreamarhernandez" target="_blank" class="social-item"><i class="fab fa-github"></i><span>andreamarhernandez</span></a>
+      <a href="https://www.linkedin.com/in/andrea-margarita-hern%C3%A1ndez-ar%C3%A9valo-3847263b6" target="_blank" class="social-item"><i class="fab fa-linkedin-in"></i><span>LinkedIn</span></a>
+      <a href="mailto:andreamhrdez@gmail.com" class="social-item"><i class="fas fa-envelope"></i><span>andreamhrdez@gmail.com</span></a>
+    </div>
+    <div class="contact-right">
+      <form id="contactForm" novalidate>
+        <div class="form-grid-2">
+          <div class="form-group">
+            <label class="form-label" for="cf-name">Nombre completo <span class="required">*</span></label>
+            <input type="text" id="cf-name" class="form-input" placeholder="Tu nombre completo" minlength="2" maxlength="80" required/>
+            <span class="form-error" id="err-name"></span>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="cf-phone">Teléfono <span class="optional">(opcional)</span></label>
+            <input type="tel" id="cf-phone" class="form-input" placeholder="+503 0000-0000" maxlength="20"/>
+            <span class="form-error" id="err-phone"></span>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="cf-email">Correo electrónico <span class="required">*</span></label>
+            <input type="email" id="cf-email" class="form-input" placeholder="tucorreo@ejemplo.com" required/>
+            <span class="form-error" id="err-email"></span>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="cf-subject">Asunto <span class="required">*</span></label>
+            <select id="cf-subject" class="form-input form-select" required>
+              <option value="">Selecciona un asunto...</option>
+              <option value="Propuesta de colaboración">Propuesta de colaboración</option>
+              <option value="Oportunidad laboral">Oportunidad laboral</option>
+              <option value="Consulta sobre proyectos">Consulta sobre proyectos</option>
+              <option value="Otro">Otro</option>
+            </select>
+            <span class="form-error" id="err-subject"></span>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="cf-msg">Mensaje <span class="required">*</span></label>
+          <textarea id="cf-msg" class="form-input" placeholder="Escribe tu mensaje aquí..." minlength="10" maxlength="1000" required></textarea>
+          <span class="form-error" id="err-msg"></span>
+          <span class="char-count" id="char-count">0 / 1000</span>
+        </div>
+        <div class="form-group form-check">
+          <input type="checkbox" id="cf-privacy" required/>
+          <label for="cf-privacy" class="check-label">Acepto que mis datos sean usados para responder a mi consulta <span class="required">*</span></label>
+          <span class="form-error" id="err-privacy"></span>
+        </div>
+        <button type="submit" class="btn-send" id="btn-send">
+          <span class="send-text">Enviar mensaje</span>
+          <i class="fas fa-paper-plane"></i>
+        </button>
+      </form>
+      <div class="form-success" id="formSuccess" style="display:none;">
+        <i class="fas fa-check-circle"></i>
+        <h4 class="success-title">¡Mensaje enviado!</h4>
+        <p class="success-msg">Gracias por contactarme. Te responderé pronto.</p>
+      </div>
+      <div class="form-error-global" id="formError" style="display:none;">
+        <i class="fas fa-exclamation-circle"></i>
+        <span class="error-global-msg">Hubo un error al enviar. Intenta de nuevo.</span>
+      </div>
+    </div>
+  </div>
+</div>
+ 
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">A</div>
+    <div class="footer-links">
+      <a href="#Inicio">Inicio</a>
+      <a href="#about">Acerca de mí</a>
+      <a href="#certificados">Certificados</a>
+      <a href="#portfolio">Portafolio</a>
+      <a href="#contact">Contáctame</a>
+    </div>
+    <div class="footer-right">
+      <div class="footer-socials">
+        <a href="https://www.linkedin.com/in/andrea-margarita-hern%C3%A1ndez-ar%C3%A9valo-3847263b6" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/andreamarhernandez" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
+      <div class="footer-email">andreamhrdez@gmail.com</div>
+    </div>
+  </div>
+  <div class="copyright">© 2026 · Andrea Hernandez</div>
+</footer>
+ 
+<!-- EmailJS -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+ 
+<script>
+  // ── EMAILJS ──
+  emailjs.init("LlOrgdCBcKA5mLiAc");
+  const EMAILJS_SERVICE  = "service_mhqg5ys";
+  const EMAILJS_TEMPLATE = "template_8sxx5e9";
+ 
+  // ── IDIOMA ──
+  let isSpanish = true;
+ 
+  const texts = {
+    es: {
+      greeting: "Hola, Mi nombre es",
+      role: "Desarrollo Web y Gestión de Proyectos Tecnológicos",
+      desc: "Soy estudiante de Ingeniería de Sistemas y Redes interesado en el desarrollo web y en proyectos tecnológicos. Disfruto aprender cómo se construyen las aplicaciones web, desde las interfaces de usuario hasta las bases de datos, y actualmente estoy desarrollando mis habilidades en tecnologías web modernas.",
+      btnCV: "Descargar CV",
+      cvFile: "AndreaHernandez_CV_ES.pdf",
+      nav: ["Inicio", "Acerca de mí", "Certificados", "Portafolio", "Contáctame"],
+      aboutTitle: "Acerca de mí",
+      aboutLabel: "¿Quién soy?",
+      aboutHeading: "Estudiante de Ingeniería de<br/>Sistemas y Redes",
+      aboutText: "Me apasiona construir interfaces limpias y funcionales. Tengo experiencia liderando equipos como Scrum Master y PMO, y disfruto explorar cada capa del desarrollo web — desde el diseño hasta la base de datos.",
+      statsLabels: ["Proyectos", "Años estudiando", "Roles de liderazgo"],
+      skillsLabel: "Habilidades técnicas",
+      skillCards: [
+        { label: "Desarrollo Web",       sub: "HTML, CSS, JavaScript" },
+        { label: "Frontend",             sub: "Responsive Design, UI Basics" },
+        { label: "Programación",         sub: "Python, JavaScript" },
+        { label: "Bases de Datos",       sub: "SQL, CouchDB" },
+        { label: "Control de Versiones", sub: "Git, GitHub" },
+        { label: "Gestión de Proyectos", sub: "PMO, Scrum" },
+        { label: "Redes",                sub: "Computer Networks" },
+        { label: "Backend",              sub: "Aprendiendo..." }
+      ],
+      portfolioTitle: "Portafolio",
+      rolLabel: "Rol",
+      projects: [
+        { category: "FRONTEND",             name: "Lectuosito",                    role: "Diseñadora UI/UX",              desc: "Biblioteca digital para gestión y lectura de libros en línea. Me encargué del diseño completo de la interfaz.",                                         link: "Ver proyecto" },
+        { category: "FRONTEND · COLABORATIVO", name: "Jardines Personalizados",    role: "Frontend Developer & Scrum Master", desc: "Sistema web para diseñar y gestionar jardines a medida. Lideré el equipo como Scrum Master y participé en el desarrollo frontend.",           link: "Ver proyecto" },
+        { category: "PMO · SCRUM",          name: "Sistema de Gestión de Pasantías", role: "Scrum Master & PMO",          desc: "Plataforma para administrar procesos de pasantías institucionales. Actualmente en fase de planeación.",                                           link: "Repositorio próximamente" }
+      ],
+      certTitle: "Certificados",
+      contactTitle: "Contáctame",
+      contactInfoTitle: "Info de contacto",
+      socialsTitle: "Redes profesionales",
+      namePh: "Tu nombre completo",
+      subjectOpts: ["Selecciona un asunto...", "Propuesta de colaboración", "Oportunidad laboral", "Consulta sobre proyectos", "Otro"],
+      msgPh: "Escribe tu mensaje aquí...",
+      sendBtn: "Enviar mensaje",
+      successTitle: "¡Mensaje enviado!",
+      successMsg: "Gracias por contactarme. Te responderé pronto.",
+      errorMsg: "Hubo un error al enviar. Intenta de nuevo.",
+      footerLinks: ["Inicio", "Acerca de mí", "Certificados", "Portafolio", "Contáctame"],
+      copyright: "© 2026 · Andrea Hernandez"
+    },
+    en: {
+      greeting: "Hi, My name is",
+      role: "Web Development & Technology Project Management",
+      desc: "I am a Systems and Networks Engineering student interested in web development and technology projects. I enjoy learning how web applications are built, from user interfaces to databases, and I am currently developing my skills in modern web technologies.",
+      btnCV: "Download CV",
+      cvFile: "AndreaHernandez_CV_EN.pdf",
+      nav: ["Home", "About me", "Certificates", "Portfolio", "Contact me"],
+      aboutTitle: "About me",
+      aboutLabel: "Who am I?",
+      aboutHeading: "Systems and Networks<br/>Engineering Student",
+      aboutText: "I'm passionate about building clean and functional interfaces. I have experience leading teams as Scrum Master and PMO, and I enjoy exploring every layer of web development — from design to databases.",
+      statsLabels: ["Projects", "Years studying", "Leadership roles"],
+      skillsLabel: "Technical skills",
+      skillCards: [
+        { label: "Web Development",  sub: "HTML, CSS, JavaScript" },
+        { label: "Frontend",         sub: "Responsive Design, UI Basics" },
+        { label: "Programming",      sub: "Python, JavaScript" },
+        { label: "Databases",        sub: "SQL, CouchDB" },
+        { label: "Version Control",  sub: "Git, GitHub" },
+        { label: "Project Management", sub: "PMO, Scrum" },
+        { label: "Networking",       sub: "Computer Networks" },
+        { label: "Backend",          sub: "Learning..." }
+      ],
+      portfolioTitle: "Portfolio",
+      rolLabel: "Role",
+      projects: [
+        { category: "FRONTEND",              name: "Lectuosito",                  role: "UI/UX Designer",                desc: "Digital library for book management and online reading. I handled the complete interface design.",                                                    link: "View project" },
+        { category: "FRONTEND · COLLABORATIVE", name: "Jardines Personalizados",  role: "Frontend Developer & Scrum Master", desc: "Web system to design and manage custom gardens. I led the team as Scrum Master and participated in frontend development.",                  link: "View project" },
+        { category: "PMO · SCRUM",           name: "Internship Management System", role: "Scrum Master & PMO",           desc: "Platform to manage institutional internship processes. Currently in the planning phase.",                                                        link: "Repository coming soon" }
+      ],
+      certTitle: "Certificates",
+      contactTitle: "Contact me",
+      contactInfoTitle: "Contact Info",
+      socialsTitle: "Professional Networks",
+      namePh: "Your full name",
+      subjectOpts: ["Select a subject...", "Collaboration proposal", "Job opportunity", "Project inquiry", "Other"],
+      msgPh: "Write your message here...",
+      sendBtn: "Send message",
+      successTitle: "Message sent!",
+      successMsg: "Thanks for reaching out. I'll get back to you soon.",
+      errorMsg: "There was an error sending. Please try again.",
+      footerLinks: ["Home", "About me", "Certificates", "Portfolio", "Contact me"],
+      copyright: "© 2026 · Andrea Hernandez"
+    }
+  };
+ 
+  function setLang(lang) {
+    isSpanish = (lang === 'es');
+    document.getElementById('btn-es').classList.toggle('active', isSpanish);
+    document.getElementById('btn-en').classList.toggle('active', !isSpanish);
+    applyTranslation();
+  }
+ 
+  function applyTranslation() {
+    const t = isSpanish ? texts.es : texts.en;
+ 
+    try { document.querySelector('.hero-greeting').textContent = t.greeting; } catch(e){}
+    try { document.querySelector('.hero-role').textContent = t.role; } catch(e){}
+    try { document.querySelector('.hero-desc').textContent = t.desc; } catch(e){}
+    try {
+      const cvLink = document.getElementById('btn-cv-link');
+      cvLink.href     = isSpanish ? 'AndreaHernandez_CV (3).pdf' : 'AndreaHernandez_CV_ENG.pdf';
+      cvLink.download = isSpanish ? 'AndreaHernandez_CV (3).pdf' : 'AndreaHernandez_CV_ENG.pdf';
+      cvLink.download = t.cvFile;
+      document.querySelector('.cv-text').textContent = t.btnCV;
+    } catch(e){}
+ 
+    try {
+      const navLinks = document.querySelectorAll('.nav-links li a:not(.btn-contact)');
+      navLinks.forEach((link, i) => { if (t.nav[i]) link.textContent = t.nav[i]; });
+      document.querySelector('.btn-contact').textContent = t.nav[4];
+    } catch(e){}
+ 
+    try { document.querySelector('.about-title').textContent = t.aboutTitle; } catch(e){}
+    try { document.querySelector('.about-label-who').textContent = t.aboutLabel; } catch(e){}
+    try { document.querySelector('.about-heading').innerHTML = t.aboutHeading; } catch(e){}
+    try { document.querySelector('.about-text').textContent = t.aboutText; } catch(e){}
+    try {
+      document.querySelectorAll('.stat-label').forEach((el, i) => {
+        if (t.statsLabels[i]) el.textContent = t.statsLabels[i];
+      });
+    } catch(e){}
+    try { document.querySelector('.about-label-skills').textContent = t.skillsLabel; } catch(e){}
+ 
+    try {
+      document.querySelectorAll('.skill-card').forEach((card, i) => {
+        if (t.skillCards[i]) {
+          card.querySelector('.skill-label').textContent = t.skillCards[i].label;
+          card.querySelector('.skill-sub').textContent   = t.skillCards[i].sub;
+        }
+      });
+    } catch(e){}
+ 
+    try { document.querySelector('.cert-title').textContent = t.certTitle; } catch(e){}
+ 
+    try {
+      document.querySelector('.portfolio-title').textContent = t.portfolioTitle;
+      document.querySelectorAll('.project-card').forEach((card, i) => {
+        if (t.projects[i]) {
+          card.querySelector('.project-category').textContent = t.projects[i].category;
+          card.querySelector('.project-name').textContent     = t.projects[i].name;
+          card.querySelector('.project-role-text').innerHTML  = t.rolLabel + ': <span>' + t.projects[i].role + '</span>';
+          card.querySelector('.project-desc').textContent     = t.projects[i].desc;
+          const link = card.querySelector('.project-link, .project-link-disabled');
+          if (link) link.innerHTML = '<i class="fab fa-github"></i> ' + t.projects[i].link;
+        }
+      });
+    } catch(e){}
+ 
+    try { document.querySelector('.contact-title').textContent    = t.contactTitle; } catch(e){}
+    try { document.querySelector('.contact-info-h4').textContent  = t.contactInfoTitle; } catch(e){}
+    try { document.querySelector('.social-h4').textContent        = t.socialsTitle; } catch(e){}
+    try { document.getElementById('cf-name').placeholder         = t.namePh; } catch(e){}
+    try { document.getElementById('cf-msg').placeholder          = t.msgPh; } catch(e){}
+    try { document.querySelector('.send-text').textContent        = t.sendBtn; } catch(e){}
+    try { document.querySelector('.success-title').textContent    = t.successTitle; } catch(e){}
+    try { document.querySelector('.success-msg').textContent      = t.successMsg; } catch(e){}
+    try { document.querySelector('.error-global-msg').textContent = t.errorMsg; } catch(e){}
+    try {
+      const opts = document.querySelectorAll('#cf-subject option');
+      opts.forEach((opt, i) => { if (t.subjectOpts[i]) opt.textContent = t.subjectOpts[i]; });
+    } catch(e){}
+ 
+    try {
+      const fLinks = document.querySelectorAll('.footer-links a');
+      fLinks.forEach((a, i) => { if (t.footerLinks[i]) a.textContent = t.footerLinks[i]; });
+      document.querySelector('.copyright').textContent = t.copyright;
+    } catch(e){}
+  }
+ 
+  // ── VALIDACIONES ──
+  const validators = {
+    "cf-name":    v => v.trim().length >= 2 ? "" : "El nombre debe tener al menos 2 caracteres.",
+    "cf-email":   v => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v.trim()) ? "" : "Ingresa un correo válido.",
+    "cf-phone":   v => v === "" || /^[\d\s\+\-\(\)]{7,20}$/.test(v.trim()) ? "" : "Formato de teléfono inválido.",
+    "cf-subject": v => v !== "" ? "" : "Selecciona un asunto.",
+    "cf-msg":     v => v.trim().length >= 10 ? "" : "El mensaje debe tener al menos 10 caracteres."
+  };
+ 
+  function validateField(id) {
+    const el  = document.getElementById(id);
+    const err = document.getElementById("err-" + id.replace("cf-", ""));
+    if (!el || !err) return true;
+    const msg = validators[id] ? validators[id](el.value) : "";
+    err.textContent = msg;
+    el.classList.toggle("invalid", !!msg);
+    el.classList.toggle("valid",   !msg && el.value !== "");
+    return msg === "";
+  }
+ 
+  ["cf-name","cf-email","cf-phone","cf-subject","cf-msg"].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) {
+      el.addEventListener("blur",  () => validateField(id));
+      el.addEventListener("input", () => validateField(id));
+    }
+  });
+ 
+  const msgEl   = document.getElementById("cf-msg");
+  const countEl = document.getElementById("char-count");
+  if (msgEl && countEl) {
+    msgEl.addEventListener("input", () => { countEl.textContent = msgEl.value.length + " / 1000"; });
+  }
+ 
+  // ── ENVÍO ──
+  document.getElementById("contactForm")?.addEventListener("submit", async function(e) {
+    e.preventDefault();
+ 
+    const fields   = ["cf-name","cf-email","cf-phone","cf-subject","cf-msg"];
+    const allValid = fields.map(validateField).every(Boolean);
+ 
+    const privacy    = document.getElementById("cf-privacy");
+    const errPrivacy = document.getElementById("err-privacy");
+    if (!privacy.checked) {
+      errPrivacy.textContent = "Debes aceptar para continuar.";
+      return;
+    } else {
+      errPrivacy.textContent = "";
+    }
+ 
+    if (!allValid) return;
+ 
+    const btn = document.getElementById("btn-send");
+    btn.disabled = true;
+    btn.querySelector(".send-text").textContent = isSpanish ? "Enviando..." : "Sending...";
+ 
+    const params = {
+      from_name:  document.getElementById("cf-name").value.trim(),
+      from_email: document.getElementById("cf-email").value.trim(),
+      from_phone: document.getElementById("cf-phone").value.trim() || "No indicado",
+      subject:    document.getElementById("cf-subject").value,
+      message:    document.getElementById("cf-msg").value.trim()
+    };
+ 
+    try {
+      await emailjs.send(EMAILJS_SERVICE, EMAILJS_TEMPLATE, params);
+      document.getElementById("contactForm").style.display  = "none";
+      document.getElementById("formSuccess").style.display  = "block";
+      document.getElementById("formError").style.display    = "none";
+    } catch(err) {
+      console.error("EmailJS error:", err);
+      document.getElementById("formError").style.display    = "flex";
+      btn.disabled = false;
+      btn.querySelector(".send-text").textContent = isSpanish ? "Enviar mensaje" : "Send message";
+    }
+  });
+</script>
+</body>
+</html>
