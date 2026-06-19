@@ -14,7 +14,19 @@
  
 <!-- NAVBAR -->
 <nav>
-  <div class="nav-logo">A</div>
+  <div class="nav-logo">
+    <svg width="32" height="40" viewBox="0 0 260 340" xmlns="http://www.w3.org/2000/svg" aria-label="Logo Andrea Hernández">
+      <polygon points="130,10 0,290 260,290" fill="none" stroke="#c9a96e" stroke-width="10" stroke-linejoin="round"/>
+      <line x1="52" y1="180" x2="208" y2="180" stroke="#c9a96e" stroke-width="10" stroke-linecap="round"/>
+      <path d="M112,12 Q106,0 96,0 Q112,10 114,14" fill="#c9a96e"/>
+      <path d="M148,12 Q154,0 164,0 Q148,10 146,14" fill="#c9a96e"/>
+      <circle cx="90" cy="110" r="28" fill="#c9a96e"/>
+      <circle cx="90" cy="110" r="16" fill="#12151c"/>
+      <circle cx="170" cy="110" r="28" fill="#c9a96e"/>
+      <circle cx="170" cy="110" r="16" fill="#12151c"/>
+      <polygon points="130,132 112,160 148,160" fill="#c9a96e"/>
+    </svg>
+  </div>
   <ul class="nav-links">
     <li><a href="#Inicio">Inicio</a></li>
     <li><a href="#about">Acerca de mí</a></li>
@@ -237,7 +249,19 @@
 <!-- FOOTER -->
 <footer>
   <div class="footer-inner">
-    <div class="footer-logo">A</div>
+    <div class="footer-logo">
+      <svg width="26" height="32" viewBox="0 0 260 340" xmlns="http://www.w3.org/2000/svg" aria-label="Logo Andrea Hernández">
+        <polygon points="130,10 0,290 260,290" fill="none" stroke="#c9a96e" stroke-width="10" stroke-linejoin="round"/>
+        <line x1="52" y1="180" x2="208" y2="180" stroke="#c9a96e" stroke-width="10" stroke-linecap="round"/>
+        <path d="M112,12 Q106,0 96,0 Q112,10 114,14" fill="#c9a96e"/>
+        <path d="M148,12 Q154,0 164,0 Q148,10 146,14" fill="#c9a96e"/>
+        <circle cx="90" cy="110" r="28" fill="#c9a96e"/>
+        <circle cx="90" cy="110" r="16" fill="#12151c"/>
+        <circle cx="170" cy="110" r="28" fill="#c9a96e"/>
+        <circle cx="170" cy="110" r="16" fill="#12151c"/>
+        <polygon points="130,132 112,160 148,160" fill="#c9a96e"/>
+      </svg>
+    </div>
     <div class="footer-links">
       <a href="#Inicio">Inicio</a>
       <a href="#about">Acerca de mí</a>
@@ -374,8 +398,7 @@
     try { document.querySelector('.hero-desc').textContent = t.desc; } catch(e){}
     try {
       const cvLink = document.getElementById('btn-cv-link');
-      cvLink.href     = isSpanish ? 'AndreaHernandez_CV (3).pdf' : 'AndreaHernandez_CV_ENG.pdf';
-      cvLink.download = isSpanish ? 'AndreaHernandez_CV (3).pdf' : 'AndreaHernandez_CV_ENG.pdf';
+      cvLink.href     = t.cvFile;
       cvLink.download = t.cvFile;
       document.querySelector('.cv-text').textContent = t.btnCV;
     } catch(e){}
