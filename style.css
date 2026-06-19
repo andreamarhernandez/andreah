@@ -545,17 +545,55 @@ textarea.form-input { height: 110px; }
   .cert-grid { grid-template-columns: 1fr 1fr !important; }
   .about-right .skills-grid { grid-template-columns: 1fr 1fr !important; }
 }
-.hero-quote {
+ 
+/* ── RECOMENDACIONES ── */
+#recomendaciones { max-width: 1000px; margin: 0 auto; padding: 60px; }
+.rec-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.rec-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 24px 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  transition: border-color .2s, transform .2s;
+  position: relative;
+}
+.rec-card:hover { border-color: var(--gold); transform: translateY(-4px); }
+.rec-quote-icon { font-size: 40px; color: var(--gold); opacity: 0.25; line-height: 1; font-family: Georgia, serif; margin-bottom: -10px; }
+.rec-quote {
   font-size: 11px;
-  color: #c9a96e;
+  color: var(--text-muted);
+  line-height: 1.85;
   font-style: italic;
-  margin-bottom: 14px;
-  letter-spacing: 0.5px;
-  opacity: 0.85;
+  flex: 1;
+  border-left: 2px solid var(--gold);
+  padding-left: 12px;
 }
-.rec-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+.rec-divider { height: 1px; background: var(--border); }
+.rec-author { display: flex; align-items: flex-start; gap: 12px; }
+.rec-avatar {
+  width: 38px; height: 38px;
+  border-radius: 50%;
+  background: rgba(201,169,110,0.1);
+  border: 1px solid rgba(201,169,110,0.3);
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+  font-family: 'Playfair Display', serif;
+  font-size: 14px; font-weight: 700; color: var(--gold);
 }
-.rec-grid { grid-template-columns: repeat(2, 1fr); }
+.rec-info { flex: 1; }
+.rec-name { font-size: 12px; font-weight: 600; color: var(--text-main); margin-bottom: 2px; }
+.rec-role { font-size: 10px; color: var(--gold); margin-bottom: 1px; }
+.rec-inst { font-size: 10px; color: var(--text-muted); margin-bottom: 8px; }
+.rec-link {
+  display: inline-flex; align-items: center; gap: 5px;
+  font-size: 10px; color: var(--text-muted);
+  text-decoration: none; transition: color .2s, border-color .2s;
+  border: 1px solid var(--border); padding: 4px 10px; border-radius: 20px;
+}
+.rec-link:hover { color: var(--gold); border-color: var(--gold); }
+.rec-date { font-size: 10px; color: #555; position: absolute; top: 16px; right: 16px; }
+@media (max-width: 900px) { .rec-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 768px) { #recomendaciones { padding: 36px 16px; } .rec-grid { grid-template-columns: 1fr; } }
