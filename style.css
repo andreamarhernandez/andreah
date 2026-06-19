@@ -553,3 +553,9 @@ textarea.form-input { height: 110px; }
   letter-spacing: 0.5px;
   opacity: 0.85;
 }
+.rec-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.rec-grid { grid-template-columns: repeat(2, 1fr); }
