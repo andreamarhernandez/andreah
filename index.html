@@ -46,6 +46,7 @@
 <!-- HERO -->
 <div class="hero" id="Inicio">
   <div class="hero-text">
+    <p class="hero-quote">"Volar alto requiere buena planificación."</p>
     <p class="hero-greeting">Hola, Mi nombre es</p>
     <h1 class="hero-name">Andrea Margarita Hernandez Arevalo</h1>
     <p class="hero-role">Desarrollo Web y Gestión de Proyectos Tecnológicos</p>
@@ -391,6 +392,12 @@
   }
  
   function applyTranslation() {
+    try {
+  const quote = document.querySelector('.hero-quote');
+  if (quote) quote.textContent = isSpanish
+    ? '"Volar alto requiere buena planificación."'
+    : '"Flying high requires good planning."';
+} catch(e){}
     const t = isSpanish ? texts.es : texts.en;
  
     try { document.querySelector('.hero-greeting').textContent = t.greeting; } catch(e){}
