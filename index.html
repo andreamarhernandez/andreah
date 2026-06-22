@@ -28,11 +28,11 @@
     </svg>
   </div>
   <ul class="nav-links">
-    <li><a href="#Inicio">Inicio</a></li>
-    <li><a href="#about">Acerca de mí</a></li>
-    <li><a href="#certificados">Certificados</a></li>
-    <li><a href="#recomendaciones">Recomendaciones</a></li>
-    <li><a href="#portfolio">Portafolio</a></li>
+    <li><a href="#Inicio" id="nav-inicio">Inicio</a></li>
+    <li><a href="#about" id="nav-about">Acerca de mí</a></li>
+    <li><a href="#certificados" id="nav-cert">Certificados</a></li>
+    <li><a href="#recomendaciones" id="nav-rec">Recomendaciones</a></li>
+    <li><a href="#portfolio" id="nav-portfolio">Portafolio</a></li>
     <li><a href="#contact" class="btn-contact">Contáctame</a></li>
   </ul>
 </nav>
@@ -126,13 +126,12 @@
 </section>
  
 <hr class="section-divider"/>
-
-<!-- RECOMENDACIONES -->
+ 
 <!-- RECOMENDACIONES -->
 <section id="recomendaciones">
   <h2 class="section-title rec-title">Recomendaciones</h2>
   <div class="rec-grid">
-
+ 
     <div class="rec-card">
       <span class="rec-date">Junio 2026</span>
       <div class="rec-quote-icon">"</div>
@@ -145,12 +144,12 @@
           <p class="rec-role">Docente · Facultad de Ciencia y Tecnología</p>
           <p class="rec-inst">Universidad Gerardo Barrios — Usulután</p>
           <a href="Carta_Andrea1.pdf" target="_blank" class="rec-link">
-            <i class="fas fa-file-pdf"></i> Ver carta completa
+            <i class="fas fa-file-pdf"></i> <span class="rec-link-text">Ver carta completa</span>
           </a>
         </div>
       </div>
     </div>
-
+ 
     <div class="rec-card">
       <span class="rec-date">Junio 2026</span>
       <div class="rec-quote-icon">"</div>
@@ -163,12 +162,12 @@
           <p class="rec-role">Docente · Facultad de Ciencia y Tecnología</p>
           <p class="rec-inst">Universidad Gerardo Barrios — Usulután</p>
           <a href="Carta_Andrea2.pdf" target="_blank" class="rec-link">
-            <i class="fas fa-file-pdf"></i> Ver carta completa
+            <i class="fas fa-file-pdf"></i> <span class="rec-link-text">Ver carta completa</span>
           </a>
         </div>
       </div>
     </div>
-
+ 
     <div class="rec-card">
       <span class="rec-date">Junio 2026</span>
       <div class="rec-quote-icon">"</div>
@@ -181,17 +180,16 @@
           <p class="rec-role">Docente Tiempo Completo · Fac. de Ciencias y Tecnologías</p>
           <p class="rec-inst">Universidad Gerardo Barrios — Usulután</p>
           <a href="Carta_Andrea3.pdf" target="_blank" class="rec-link">
-            <i class="fas fa-file-pdf"></i> Ver carta completa
+            <i class="fas fa-file-pdf"></i> <span class="rec-link-text">Ver carta completa</span>
           </a>
         </div>
       </div>
     </div>
-
+ 
   </div>
 </section>
-
+ 
 <hr class="section-divider"/>
-
  
 <!-- PORTFOLIO -->
 <div class="portfolio-section" id="portfolio">
@@ -252,7 +250,7 @@
       <div class="contact-info-item"><i class="fas fa-map-marker-alt"></i><span>Usulután, El Salvador</span></div>
       <p class="social-title social-h4">Redes profesionales</p>
       <a href="https://github.com/andreamarhernandez" target="_blank" class="social-item"><i class="fab fa-github"></i><span>andreamarhernandez</span></a>
-      <a href="https://www.linkedin.com/in/andrea-margarita-hern%C3%A1ndez-ar%C3%A9valo-3847263b6" target="_blank" class="social-item"><i class="fab fa-linkedin-in"></i><span>LinkedIn</span></a>
+      <a href="https://www.linkedin.com/in/andrea-hernández-65a8573b1?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="social-item"><i class="fab fa-linkedin-in"></i><span>LinkedIn</span></a>
       <a href="mailto:andreamhrdez@gmail.com" class="social-item"><i class="fas fa-envelope"></i><span>andreamhrdez@gmail.com</span></a>
     </div>
     <div class="contact-right">
@@ -331,15 +329,16 @@
       </svg>
     </div>
     <div class="footer-links">
-      <a href="#Inicio">Inicio</a>
-      <a href="#about">Acerca de mí</a>
-      <a href="#certificados">Certificados</a>
-      <a href="#portfolio">Portafolio</a>
-      <a href="#contact">Contáctame</a>
+      <a href="#Inicio" id="footer-inicio">Inicio</a>
+      <a href="#about" id="footer-about">Acerca de mí</a>
+      <a href="#certificados" id="footer-cert">Certificados</a>
+      <a href="#recomendaciones" id="footer-rec">Recomendaciones</a>
+      <a href="#portfolio" id="footer-portfolio">Portafolio</a>
+      <a href="#contact" id="footer-contact">Contáctame</a>
     </div>
     <div class="footer-right">
       <div class="footer-socials">
-        <a href="https://www.linkedin.com/in/andrea-margarita-hern%C3%A1ndez-ar%C3%A9valo-3847263b6" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.linkedin.com/in/andrea-hernández-65a8573b1?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank"><i class="fab fa-linkedin-in"></i></a>
         <a href="https://github.com/andreamarhernandez" target="_blank"><i class="fab fa-github"></i></a>
       </div>
       <div class="footer-email">andreamhrdez@gmail.com</div>
@@ -362,12 +361,19 @@
  
   const texts = {
     es: {
+      quote: '"Volar alto requiere buena planificación."',
       greeting: "Hola, Mi nombre es",
       role: "Desarrollo Web y Gestión de Proyectos Tecnológicos",
       desc: "Soy estudiante de Ingeniería de Sistemas y Redes interesado en el desarrollo web y en proyectos tecnológicos. Disfruto aprender cómo se construyen las aplicaciones web, desde las interfaces de usuario hasta las bases de datos, y actualmente estoy desarrollando mis habilidades en tecnologías web modernas.",
       btnCV: "Descargar CV",
       cvFile: "AndreaHernandez_CV_ES.pdf",
-      nav: ["Inicio", "Acerca de mí", "Certificados", "Portafolio", "Contáctame"],
+      // Nav: Inicio, Acerca de mí, Certificados, Recomendaciones, Portafolio, Contáctame
+      navInicio:   "Inicio",
+      navAbout:    "Acerca de mí",
+      navCert:     "Certificados",
+      navRec:      "Recomendaciones",
+      navPortfolio:"Portafolio",
+      navContact:  "Contáctame",
       aboutTitle: "Acerca de mí",
       aboutLabel: "¿Quién soy?",
       aboutHeading: "Estudiante de Ingeniería de<br/>Sistemas y Redes",
@@ -384,14 +390,17 @@
         { label: "Redes",                sub: "Computer Networks" },
         { label: "Backend",              sub: "Aprendiendo..." }
       ],
+      certTitle: "Certificados",
+      recTitle: "Recomendaciones",
+      recDate: "Junio 2026",
+      recLinkText: "Ver carta completa",
       portfolioTitle: "Portafolio",
       rolLabel: "Rol",
       projects: [
-        { category: "FRONTEND",             name: "Lectuosito",                    role: "Diseñadora UI/UX",              desc: "Biblioteca digital para gestión y lectura de libros en línea. Me encargué del diseño completo de la interfaz.",                                         link: "Ver proyecto" },
-        { category: "FRONTEND · COLABORATIVO", name: "Jardines Personalizados",    role: "Frontend Developer & Scrum Master", desc: "Sistema web para diseñar y gestionar jardines a medida. Lideré el equipo como Scrum Master y participé en el desarrollo frontend.",           link: "Ver proyecto" },
-        { category: "PMO · SCRUM",          name: "Sistema de Gestión de Pasantías", role: "Scrum Master & PMO",          desc: "Plataforma para administrar procesos de pasantías institucionales. Actualmente en fase de planeación.",                                           link: "Repositorio próximamente" }
+        { category: "FRONTEND",               name: "Lectuosito",                      role: "Diseñadora UI/UX",                  desc: "Biblioteca digital para gestión y lectura de libros en línea. Me encargué del diseño completo de la interfaz.",                                       link: "Ver proyecto" },
+        { category: "FRONTEND · COLABORATIVO", name: "Jardines Personalizados",         role: "Frontend Developer & Scrum Master", desc: "Sistema web para diseñar y gestionar jardines a medida. Lideré el equipo como Scrum Master y participé en el desarrollo frontend.",                 link: "Ver proyecto" },
+        { category: "PMO · SCRUM",             name: "Sistema de Gestión de Pasantías", role: "Scrum Master & PMO",                desc: "Plataforma para administrar procesos de pasantías institucionales. Actualmente en fase de planeación.",                                            link: "Repositorio próximamente" }
       ],
-      certTitle: "Certificados",
       contactTitle: "Contáctame",
       contactInfoTitle: "Info de contacto",
       socialsTitle: "Redes profesionales",
@@ -402,16 +411,27 @@
       successTitle: "¡Mensaje enviado!",
       successMsg: "Gracias por contactarme. Te responderé pronto.",
       errorMsg: "Hubo un error al enviar. Intenta de nuevo.",
-      footerLinks: ["Inicio", "Acerca de mí", "Certificados", "Portafolio", "Contáctame"],
+      footerInicio:    "Inicio",
+      footerAbout:     "Acerca de mí",
+      footerCert:      "Certificados",
+      footerRec:       "Recomendaciones",
+      footerPortfolio: "Portafolio",
+      footerContact:   "Contáctame",
       copyright: "© 2026 · Andrea Hernandez"
     },
     en: {
+      quote: '"Flying high requires good planning."',
       greeting: "Hi, My name is",
       role: "Web Development & Technology Project Management",
       desc: "I am a Systems and Networks Engineering student interested in web development and technology projects. I enjoy learning how web applications are built, from user interfaces to databases, and I am currently developing my skills in modern web technologies.",
       btnCV: "Download CV",
       cvFile: "AndreaHernandez_CV_EN.pdf",
-      nav: ["Home", "About me", "Certificates", "Portfolio", "Contact me"],
+      navInicio:   "Home",
+      navAbout:    "About me",
+      navCert:     "Certificates",
+      navRec:      "Recommendations",
+      navPortfolio:"Portfolio",
+      navContact:  "Contact me",
       aboutTitle: "About me",
       aboutLabel: "Who am I?",
       aboutHeading: "Systems and Networks<br/>Engineering Student",
@@ -419,23 +439,26 @@
       statsLabels: ["Projects", "Years studying", "Leadership roles"],
       skillsLabel: "Technical skills",
       skillCards: [
-        { label: "Web Development",  sub: "HTML, CSS, JavaScript" },
-        { label: "Frontend",         sub: "Responsive Design, UI Basics" },
-        { label: "Programming",      sub: "Python, JavaScript" },
-        { label: "Databases",        sub: "SQL, CouchDB" },
-        { label: "Version Control",  sub: "Git, GitHub" },
+        { label: "Web Development",    sub: "HTML, CSS, JavaScript" },
+        { label: "Frontend",           sub: "Responsive Design, UI Basics" },
+        { label: "Programming",        sub: "Python, JavaScript" },
+        { label: "Databases",          sub: "SQL, CouchDB" },
+        { label: "Version Control",    sub: "Git, GitHub" },
         { label: "Project Management", sub: "PMO, Scrum" },
-        { label: "Networking",       sub: "Computer Networks" },
-        { label: "Backend",          sub: "Learning..." }
+        { label: "Networking",         sub: "Computer Networks" },
+        { label: "Backend",            sub: "Learning..." }
       ],
+      certTitle: "Certificates",
+      recTitle: "Recommendations",
+      recDate: "June 2026",
+      recLinkText: "View full letter",
       portfolioTitle: "Portfolio",
       rolLabel: "Role",
       projects: [
-        { category: "FRONTEND",              name: "Lectuosito",                  role: "UI/UX Designer",                desc: "Digital library for book management and online reading. I handled the complete interface design.",                                                    link: "View project" },
-        { category: "FRONTEND · COLLABORATIVE", name: "Jardines Personalizados",  role: "Frontend Developer & Scrum Master", desc: "Web system to design and manage custom gardens. I led the team as Scrum Master and participated in frontend development.",                  link: "View project" },
-        { category: "PMO · SCRUM",           name: "Internship Management System", role: "Scrum Master & PMO",           desc: "Platform to manage institutional internship processes. Currently in the planning phase.",                                                        link: "Repository coming soon" }
+        { category: "FRONTEND",                 name: "Lectuosito",                    role: "UI/UX Designer",                    desc: "Digital library for book management and online reading. I handled the complete interface design.",                                                   link: "View project" },
+        { category: "FRONTEND · COLLABORATIVE",  name: "Jardines Personalizados",       role: "Frontend Developer & Scrum Master", desc: "Web system to design and manage custom gardens. I led the team as Scrum Master and participated in frontend development.",                        link: "View project" },
+        { category: "PMO · SCRUM",               name: "Internship Management System",  role: "Scrum Master & PMO",                desc: "Platform to manage institutional internship processes. Currently in the planning phase.",                                                        link: "Repository coming soon" }
       ],
-      certTitle: "Certificates",
       contactTitle: "Contact me",
       contactInfoTitle: "Contact Info",
       socialsTitle: "Professional Networks",
@@ -446,7 +469,12 @@
       successTitle: "Message sent!",
       successMsg: "Thanks for reaching out. I'll get back to you soon.",
       errorMsg: "There was an error sending. Please try again.",
-      footerLinks: ["Home", "About me", "Certificates", "Portfolio", "Contact me"],
+      footerInicio:    "Home",
+      footerAbout:     "About me",
+      footerCert:      "Certificates",
+      footerRec:       "Recommendations",
+      footerPortfolio: "Portfolio",
+      footerContact:   "Contact me",
       copyright: "© 2026 · Andrea Hernandez"
     }
   };
@@ -459,14 +487,10 @@
   }
  
   function applyTranslation() {
-    try {
-  const quote = document.querySelector('.hero-quote');
-  if (quote) quote.textContent = isSpanish
-    ? '"Volar alto requiere buena planificación."'
-    : '"Flying high requires good planning."';
-} catch(e){}
     const t = isSpanish ? texts.es : texts.en;
  
+    // Hero
+    try { document.querySelector('.hero-quote').textContent = t.quote; } catch(e){}
     try { document.querySelector('.hero-greeting').textContent = t.greeting; } catch(e){}
     try { document.querySelector('.hero-role').textContent = t.role; } catch(e){}
     try { document.querySelector('.hero-desc').textContent = t.desc; } catch(e){}
@@ -477,23 +501,25 @@
       document.querySelector('.cv-text').textContent = t.btnCV;
     } catch(e){}
  
-    try {
-      const navLinks = document.querySelectorAll('.nav-links li a:not(.btn-contact)');
-      navLinks.forEach((link, i) => { if (t.nav[i]) link.textContent = t.nav[i]; });
-      document.querySelector('.btn-contact').textContent = t.nav[4];
-    } catch(e){}
+    // Nav links (individual IDs)
+    try { document.getElementById('nav-inicio').textContent    = t.navInicio;    } catch(e){}
+    try { document.getElementById('nav-about').textContent     = t.navAbout;     } catch(e){}
+    try { document.getElementById('nav-cert').textContent      = t.navCert;      } catch(e){}
+    try { document.getElementById('nav-rec').textContent       = t.navRec;       } catch(e){}
+    try { document.getElementById('nav-portfolio').textContent = t.navPortfolio; } catch(e){}
+    try { document.querySelector('.btn-contact').textContent   = t.navContact;   } catch(e){}
  
-    try { document.querySelector('.about-title').textContent = t.aboutTitle; } catch(e){}
-    try { document.querySelector('.about-label-who').textContent = t.aboutLabel; } catch(e){}
-    try { document.querySelector('.about-heading').innerHTML = t.aboutHeading; } catch(e){}
-    try { document.querySelector('.about-text').textContent = t.aboutText; } catch(e){}
+    // About
+    try { document.querySelector('.about-title').textContent      = t.aboutTitle;   } catch(e){}
+    try { document.querySelector('.about-label-who').textContent  = t.aboutLabel;   } catch(e){}
+    try { document.querySelector('.about-heading').innerHTML      = t.aboutHeading; } catch(e){}
+    try { document.querySelector('.about-text').textContent       = t.aboutText;    } catch(e){}
     try {
       document.querySelectorAll('.stat-label').forEach((el, i) => {
         if (t.statsLabels[i]) el.textContent = t.statsLabels[i];
       });
     } catch(e){}
     try { document.querySelector('.about-label-skills').textContent = t.skillsLabel; } catch(e){}
- 
     try {
       document.querySelectorAll('.skill-card').forEach((card, i) => {
         if (t.skillCards[i]) {
@@ -503,8 +529,17 @@
       });
     } catch(e){}
  
+    // Certificates
     try { document.querySelector('.cert-title').textContent = t.certTitle; } catch(e){}
  
+    // Recommendations
+    try { document.querySelector('.rec-title').textContent = t.recTitle; } catch(e){}
+    try {
+      document.querySelectorAll('.rec-date').forEach(el => { el.textContent = t.recDate; });
+      document.querySelectorAll('.rec-link-text').forEach(el => { el.textContent = t.recLinkText; });
+    } catch(e){}
+ 
+    // Portfolio
     try {
       document.querySelector('.portfolio-title').textContent = t.portfolioTitle;
       document.querySelectorAll('.project-card').forEach((card, i) => {
@@ -519,25 +554,29 @@
       });
     } catch(e){}
  
-    try { document.querySelector('.contact-title').textContent    = t.contactTitle; } catch(e){}
-    try { document.querySelector('.contact-info-h4').textContent  = t.contactInfoTitle; } catch(e){}
-    try { document.querySelector('.social-h4').textContent        = t.socialsTitle; } catch(e){}
-    try { document.getElementById('cf-name').placeholder         = t.namePh; } catch(e){}
-    try { document.getElementById('cf-msg').placeholder          = t.msgPh; } catch(e){}
-    try { document.querySelector('.send-text').textContent        = t.sendBtn; } catch(e){}
-    try { document.querySelector('.success-title').textContent    = t.successTitle; } catch(e){}
-    try { document.querySelector('.success-msg').textContent      = t.successMsg; } catch(e){}
-    try { document.querySelector('.error-global-msg').textContent = t.errorMsg; } catch(e){}
+    // Contact
+    try { document.querySelector('.contact-title').textContent   = t.contactTitle;     } catch(e){}
+    try { document.querySelector('.contact-info-h4').textContent = t.contactInfoTitle; } catch(e){}
+    try { document.querySelector('.social-h4').textContent       = t.socialsTitle;     } catch(e){}
+    try { document.getElementById('cf-name').placeholder        = t.namePh;           } catch(e){}
+    try { document.getElementById('cf-msg').placeholder         = t.msgPh;            } catch(e){}
+    try { document.querySelector('.send-text').textContent       = t.sendBtn;          } catch(e){}
+    try { document.querySelector('.success-title').textContent   = t.successTitle;     } catch(e){}
+    try { document.querySelector('.success-msg').textContent     = t.successMsg;       } catch(e){}
+    try { document.querySelector('.error-global-msg').textContent = t.errorMsg;        } catch(e){}
     try {
       const opts = document.querySelectorAll('#cf-subject option');
       opts.forEach((opt, i) => { if (t.subjectOpts[i]) opt.textContent = t.subjectOpts[i]; });
     } catch(e){}
  
-    try {
-      const fLinks = document.querySelectorAll('.footer-links a');
-      fLinks.forEach((a, i) => { if (t.footerLinks[i]) a.textContent = t.footerLinks[i]; });
-      document.querySelector('.copyright').textContent = t.copyright;
-    } catch(e){}
+    // Footer links (individual IDs)
+    try { document.getElementById('footer-inicio').textContent    = t.footerInicio;    } catch(e){}
+    try { document.getElementById('footer-about').textContent     = t.footerAbout;     } catch(e){}
+    try { document.getElementById('footer-cert').textContent      = t.footerCert;      } catch(e){}
+    try { document.getElementById('footer-rec').textContent       = t.footerRec;       } catch(e){}
+    try { document.getElementById('footer-portfolio').textContent = t.footerPortfolio; } catch(e){}
+    try { document.getElementById('footer-contact').textContent   = t.footerContact;   } catch(e){}
+    try { document.querySelector('.copyright').textContent        = t.copyright;       } catch(e){}
   }
  
   // ── VALIDACIONES ──
