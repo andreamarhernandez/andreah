@@ -367,7 +367,6 @@
       desc: "Soy estudiante de Ingeniería de Sistemas y Redes interesado en el desarrollo web y en proyectos tecnológicos. Disfruto aprender cómo se construyen las aplicaciones web, desde las interfaces de usuario hasta las bases de datos, y actualmente estoy desarrollando mis habilidades en tecnologías web modernas.",
       btnCV: "Descargar CV",
       cvFile: "AndreaHernandez_CV_ES.pdf",
-      // Nav: Inicio, Acerca de mí, Certificados, Recomendaciones, Portafolio, Contáctame
       navInicio:   "Inicio",
       navAbout:    "Acerca de mí",
       navCert:     "Certificados",
@@ -391,15 +390,21 @@
         { label: "Backend",              sub: "Aprendiendo..." }
       ],
       certTitle: "Certificados",
+      certNames: ["FLISOL 2026", "CCNA: Introducción a las redes"],
       recTitle: "Recomendaciones",
       recDate: "Junio 2026",
       recLinkText: "Ver carta completa",
+      recQuotes: [
+        "Yo Herbert René Cordero Henríquez, doy mi recomendación por este medio de Andrea Margarita Hernández Arévalo. Como estudiante ha mostrado respeto, completa dedicación a las actividades y proyectos de estudio. Es una excelente persona, con gran carisma y habilidades sociales; su forma de pensar estratégica la hace muy apta para desarrollar cualquier tarea.",
+        "Andrea ha demostrado un profundo respeto hacia sus docentes y compañeros, así como una dedicación excepcional a sus actividades académicas. Su pensamiento estratégico la capacita para abordar y resolver cualquier desafío. Su actitud proactiva y su deseo constante de superación me hacen confiar que puede destacar en cualquier ámbito.",
+        "Andrea Margarita Hernández Arévalo es una estudiante del ciclo VIII de Ingeniería en Sistemas y Redes Informática. Afirmo que es una persona de muy buena conducta, perseverante en sus estudios, honrada, intachable, responsable en todos sus actos y dispuesta a compartir todos sus conocimientos."
+      ],
       portfolioTitle: "Portafolio",
       rolLabel: "Rol",
       projects: [
-        { category: "FRONTEND",               name: "Lectuosito",                      role: "Diseñadora UI/UX",                  desc: "Biblioteca digital para gestión y lectura de libros en línea. Me encargué del diseño completo de la interfaz.",                                       link: "Ver proyecto" },
-        { category: "FRONTEND · COLABORATIVO", name: "Jardines Personalizados",         role: "Frontend Developer & Scrum Master", desc: "Sistema web para diseñar y gestionar jardines a medida. Lideré el equipo como Scrum Master y participé en el desarrollo frontend.",                 link: "Ver proyecto" },
-        { category: "PMO · SCRUM",             name: "Sistema de Gestión de Pasantías", role: "Scrum Master & PMO",                desc: "Plataforma para administrar procesos de pasantías institucionales. Actualmente en fase de planeación.",                                            link: "Repositorio próximamente" }
+        { category: "FRONTEND",               name: "Lectuosito",                      role: "Diseñadora UI/UX",                  desc: "Biblioteca digital para gestión y lectura de libros en línea. Me encargué del diseño completo de la interfaz.",                                    link: "Ver proyecto" },
+        { category: "FRONTEND · COLABORATIVO", name: "Jardines Personalizados",         role: "Frontend Developer & Scrum Master", desc: "Sistema web para diseñar y gestionar jardines a medida. Lideré el equipo como Scrum Master y participé en el desarrollo frontend.",              link: "Ver proyecto" },
+        { category: "PMO · SCRUM",             name: "Sistema de Gestión de Pasantías", role: "Scrum Master & PMO",                desc: "Plataforma para administrar procesos de pasantías institucionales. Actualmente en fase de planeación.",                                         link: "Repositorio próximamente" }
       ],
       contactTitle: "Contáctame",
       contactInfoTitle: "Info de contacto",
@@ -449,15 +454,21 @@
         { label: "Backend",            sub: "Learning..." }
       ],
       certTitle: "Certificates",
+      certNames: ["FLISOL 2026", "CCNA: Introduction to Networks"],
       recTitle: "Recommendations",
       recDate: "June 2026",
       recLinkText: "View full letter",
+      recQuotes: [
+        "I, Herbert René Cordero Henríquez, hereby recommend Andrea Margarita Hernández Arévalo. As a student she has shown respect and complete dedication to her academic activities and projects. She is an excellent person, with great charisma and social skills; her strategic way of thinking makes her very capable of carrying out any task.",
+        "Andrea has demonstrated deep respect toward her teachers and classmates, as well as exceptional dedication to her academic activities. Her strategic thinking enables her to address and resolve any challenge. Her proactive attitude and constant desire for self-improvement make me confident she can excel in any field.",
+        "Andrea Margarita Hernández Arévalo is a student in the 8th cycle of Systems and Networks Engineering. I affirm that she is a person of very good conduct, persevering in her studies, honest, irreproachable, responsible in all her actions, and willing to share all her knowledge."
+      ],
       portfolioTitle: "Portfolio",
       rolLabel: "Role",
       projects: [
-        { category: "FRONTEND",                 name: "Lectuosito",                    role: "UI/UX Designer",                    desc: "Digital library for book management and online reading. I handled the complete interface design.",                                                   link: "View project" },
-        { category: "FRONTEND · COLLABORATIVE",  name: "Jardines Personalizados",       role: "Frontend Developer & Scrum Master", desc: "Web system to design and manage custom gardens. I led the team as Scrum Master and participated in frontend development.",                        link: "View project" },
-        { category: "PMO · SCRUM",               name: "Internship Management System",  role: "Scrum Master & PMO",                desc: "Platform to manage institutional internship processes. Currently in the planning phase.",                                                        link: "Repository coming soon" }
+        { category: "FRONTEND",                 name: "Lectuosito",                    role: "UI/UX Designer",                    desc: "Digital library for book management and online reading. I handled the complete interface design.",                                               link: "View project" },
+        { category: "FRONTEND · COLLABORATIVE",  name: "Jardines Personalizados",       role: "Frontend Developer & Scrum Master", desc: "Web system to design and manage custom gardens. I led the team as Scrum Master and participated in frontend development.",                    link: "View project" },
+        { category: "PMO · SCRUM",               name: "Internship Management System",  role: "Scrum Master & PMO",                desc: "Platform to manage institutional internship processes. Currently in the planning phase.",                                                    link: "Repository coming soon" }
       ],
       contactTitle: "Contact me",
       contactInfoTitle: "Contact Info",
@@ -501,7 +512,7 @@
       document.querySelector('.cv-text').textContent = t.btnCV;
     } catch(e){}
  
-    // Nav links (individual IDs)
+    // Nav links
     try { document.getElementById('nav-inicio').textContent    = t.navInicio;    } catch(e){}
     try { document.getElementById('nav-about').textContent     = t.navAbout;     } catch(e){}
     try { document.getElementById('nav-cert').textContent      = t.navCert;      } catch(e){}
@@ -531,12 +542,20 @@
  
     // Certificates
     try { document.querySelector('.cert-title').textContent = t.certTitle; } catch(e){}
+    try {
+      document.querySelectorAll('.cert-name').forEach((el, i) => {
+        if (t.certNames[i]) el.textContent = t.certNames[i];
+      });
+    } catch(e){}
  
     // Recommendations
     try { document.querySelector('.rec-title').textContent = t.recTitle; } catch(e){}
     try {
       document.querySelectorAll('.rec-date').forEach(el => { el.textContent = t.recDate; });
       document.querySelectorAll('.rec-link-text').forEach(el => { el.textContent = t.recLinkText; });
+      document.querySelectorAll('.rec-quote').forEach((el, i) => {
+        if (t.recQuotes[i]) el.textContent = t.recQuotes[i];
+      });
     } catch(e){}
  
     // Portfolio
@@ -569,7 +588,7 @@
       opts.forEach((opt, i) => { if (t.subjectOpts[i]) opt.textContent = t.subjectOpts[i]; });
     } catch(e){}
  
-    // Footer links (individual IDs)
+    // Footer links
     try { document.getElementById('footer-inicio').textContent    = t.footerInicio;    } catch(e){}
     try { document.getElementById('footer-about').textContent     = t.footerAbout;     } catch(e){}
     try { document.getElementById('footer-cert').textContent      = t.footerCert;      } catch(e){}
